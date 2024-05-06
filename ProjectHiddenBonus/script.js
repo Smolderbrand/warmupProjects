@@ -1,9 +1,5 @@
 var answer;
 
-function start() {
-
-}
-
 function clickPlay() {
 	var totalButtons = document.getElementById("Number").value;
 	window.answer = Math.floor(Math.random() * totalButtons) + 1;
