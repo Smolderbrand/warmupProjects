@@ -9,15 +9,8 @@ function start() {
 function clickNew() {
 	window.currentPlayer = 0;
 	window.state = [0, 0, 0, 0, 0, 0, 0, 0, 0];
-	document.getElementById("buttonA").textContent = " ";
-	document.getElementById("buttonB").textContent = " ";
-	document.getElementById("buttonC").textContent = " ";
-	document.getElementById("buttonD").textContent = " ";
-	document.getElementById("buttonE").textContent = " ";
-	document.getElementById("buttonF").textContent = " ";
-	document.getElementById("buttonG").textContent = " ";
-	document.getElementById("buttonH").textContent = " ";
-	document.getElementById("buttonI").textContent = " ";
+	for (var i = 0; i < 9; i++)
+		document.getElementById("button" + String.fromCharCode(65 + i)).textContent = " ";
 	checkState();
 }
 
